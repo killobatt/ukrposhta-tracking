@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UPParcelTrackerInfo : NSObject
+@interface UPParcelTrackerInfo : NSObject< NSCoding >
 
 @property (strong, nonatomic) NSArray *operations;
 

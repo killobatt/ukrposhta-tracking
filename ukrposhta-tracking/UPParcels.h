@@ -8,3 +8,5 @@
 
 #import "UPParcel.h"
 #import "UPParcelList.h"
+#import "UPParcelTrackerInfo.h"
+#import "UPParcelTrackerOperation.h"

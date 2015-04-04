@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UPParcelTrackerOperation : NSObject
+@interface UPParcelTrackerOperation : NSObject< NSCoding >
 
 @property (strong, nonatomic) NSDate *date;
 @property (strong, nonatomic) NSNumber *eventID;
