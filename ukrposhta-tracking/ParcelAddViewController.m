@@ -37,7 +37,7 @@
         parcel.name = self.parcelNameField.text;
         parcel.parcelID = self.parcelIDField.text;
         [[UPParcelList sharedInstance] addParcel:parcel];
-        [[UPParcelList sharedInstance] updateTrackerInfoForParcel:parcel completionBlock:^(UPParcel *parcel) {
+        [[UPParcelList sharedInstance] updateTrackerInfoForParcel:parcel completionBlock:^(UPParcel *parcel, BOOL updated) {
             ParcelListViewController *controller = (ParcelListViewController *)segue.destinationViewController;
             [controller update];
         }];
