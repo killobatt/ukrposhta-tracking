@@ -29,7 +29,10 @@
 {
     self.nameLabel.text = self.parcel.name;
     self.parcelIDLabel.text = self.parcel.parcelID;
-//    self.parcelStateDescriptionLabel.text = self.parcel.name;
+    if (self.parcel.trackerInfo.operations) {
+        UPParcelTrackerOperation *lastOperation = self.parcel.trackerInfo.operations.lastObject;
+        self.parcelStateDescriptionLabel.text = lastOperation.operationDescription;
+    }
 }
 
 @end
