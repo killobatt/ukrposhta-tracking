@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  DetailViewController.h
 //  ukrposhta-tracking
 //
 //  Created by Tolik on 4/4/15.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UITableViewController
+@class UPParcel;
 
+@interface ParcelDetailViewController : UIViewController
+
+@property (strong, nonatomic) UPParcel *parcel;
 
 @end
 

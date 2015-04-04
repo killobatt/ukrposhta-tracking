@@ -51,7 +51,7 @@ static NSString * const kUPParcelListParcelsKey = @"parcels";
 
 - (void)addParcel:(UPParcel *)parcel
 {
-    [self.parcelList addObject:parcel];
+    [self.parcelList insertObject:parcel atIndex:0];
     [self save];
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
+#import "ParcelDetailViewController.h"
 
 @interface AppDelegate ()
 

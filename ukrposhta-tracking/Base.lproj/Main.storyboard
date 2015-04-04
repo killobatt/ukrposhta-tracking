@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -22,31 +23,52 @@
         <!--Master-->
         <scene sceneID="VgW-fR-Quf">
             <objects>
-                <tableViewController title="Master" id="pGg-6v-bdr" customClass="MasterViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
+                <tableViewController title="Master" id="pGg-6v-bdr" customClass="ParcelListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="2pz-XF-uhl" style="IBUITableViewCellStyleDefault" id="m0d-ak-lc9">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ParcelListCell" rowHeight="68" id="UIt-LB-qcj" customClass="ParcelListCell">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0d-ak-lc9" id="d3P-M7-ByW">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UIt-LB-qcj" id="YnB-1u-8oS">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2pz-XF-uhl">
-                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дзеркала" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8N-qe-vyA">
+                                            <rect key="frame" x="8" y="5" width="78" height="20"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RR012394123123PL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDe-u0-J2a">
+                                            <rect key="frame" x="8" y="25" width="133" height="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Відправка з установи обміну до об'єкту поштового зв'язку України" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl4-P0-M7N">
+                                            <rect key="frame" x="8" y="42" width="393" height="15"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kl4-P0-M7N" firstAttribute="top" secondItem="ZDe-u0-J2a" secondAttribute="bottom" id="8fa-dM-X3f"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="q8N-qe-vyA" secondAttribute="trailing" id="ErX-gh-OwO"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Kl4-P0-M7N" secondAttribute="trailing" id="J0s-b9-T8e"/>
+                                        <constraint firstItem="q8N-qe-vyA" firstAttribute="leading" secondItem="YnB-1u-8oS" secondAttribute="leadingMargin" id="UHq-Vi-pWK"/>
+                                        <constraint firstItem="ZDe-u0-J2a" firstAttribute="leading" secondItem="q8N-qe-vyA" secondAttribute="leading" id="ZlP-5z-wSC"/>
+                                        <constraint firstItem="ZDe-u0-J2a" firstAttribute="leading" secondItem="Kl4-P0-M7N" secondAttribute="leading" id="jxq-op-3ZV"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ZDe-u0-J2a" secondAttribute="trailing" id="mA1-nP-brA"/>
+                                        <constraint firstItem="q8N-qe-vyA" firstAttribute="top" secondItem="YnB-1u-8oS" secondAttribute="topMargin" constant="-3" id="nBh-x2-ClY"/>
+                                        <constraint firstItem="ZDe-u0-J2a" firstAttribute="top" secondItem="q8N-qe-vyA" secondAttribute="bottom" id="vdg-1f-ENY"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="Ah7-4n-0Wa" kind="show" identifier="showDetail" id="jUr-3t-vfg"/>
+                                    <outlet property="nameLabel" destination="q8N-qe-vyA" id="HYf-Ng-4DS"/>
+                                    <outlet property="parcelIDLabel" destination="ZDe-u0-J2a" id="7Zj-uE-UOS"/>
+                                    <outlet property="parcelStateDescriptionLabel" destination="Kl4-P0-M7N" id="MvQ-Mp-2GG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,16 +78,103 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="Укрпошта Трекінг" id="tQt-TN-PWz">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="2Ut-u5-z7z"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7uJ-kd-TRS">
+                            <connections>
+                                <segue destination="kky-Om-gfw" kind="show" id="9w7-MH-0ld"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="605" y="64"/>
         </scene>
+        <!--Додати відправлення-->
+        <scene sceneID="miU-E9-klg">
+            <objects>
+                <viewController title="Додати відправлення" id="kky-Om-gfw" customClass="ParcelAddViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cH1-3f-80u"/>
+                        <viewControllerLayoutGuide type="bottom" id="r9S-Fi-G0S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pBy-Mx-y6a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcE-LA-Uob">
+                                <rect key="frame" x="150" y="103" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="RHh-ym-Z3d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omf-z1-PYr">
+                                <rect key="frame" x="150" y="200" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="fyR-77-xZa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Назва посилки (опціонально):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-Sm-ofO">
+                                <rect key="frame" x="150" y="79" width="239" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Штрихкодовий ідентифікатор:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMX-XJ-zCR">
+                                <rect key="frame" x="150" y="171" width="245" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vJ-IJ-LIF">
+                                <rect key="frame" x="271" y="262" width="58" height="30"/>
+                                <state key="normal" title="Вперед!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9lj-fx-H8g" kind="unwind" identifier="unwind" unwindAction="unwind:" id="Fgg-tf-ka7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="omf-z1-PYr" secondAttribute="centerX" id="08s-3E-Uca"/>
+                            <constraint firstItem="omf-z1-PYr" firstAttribute="leading" secondItem="pBy-Mx-y6a" secondAttribute="leadingMargin" priority="900" id="1kg-bK-FSu"/>
+                            <constraint firstItem="omf-z1-PYr" firstAttribute="top" secondItem="zMX-XJ-zCR" secondAttribute="bottom" constant="8" id="3W2-wi-u3w"/>
+                            <constraint firstItem="6TZ-Sm-ofO" firstAttribute="top" secondItem="cH1-3f-80u" secondAttribute="bottom" constant="15" id="3ey-cE-JXz"/>
+                            <constraint firstItem="omf-z1-PYr" firstAttribute="leading" secondItem="zMX-XJ-zCR" secondAttribute="leading" id="7uU-8n-LzX"/>
+                            <constraint firstAttribute="centerX" secondItem="5vJ-IJ-LIF" secondAttribute="centerX" id="Fyv-h1-qOl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vcE-LA-Uob" secondAttribute="trailing" priority="900" id="PEs-bo-XdA"/>
+                            <constraint firstItem="vcE-LA-Uob" firstAttribute="top" secondItem="6TZ-Sm-ofO" secondAttribute="bottom" constant="3" id="RiY-O5-oUd"/>
+                            <constraint firstAttribute="centerX" secondItem="vcE-LA-Uob" secondAttribute="centerX" id="YlY-3c-07r"/>
+                            <constraint firstItem="vcE-LA-Uob" firstAttribute="leading" secondItem="pBy-Mx-y6a" secondAttribute="leadingMargin" priority="900" id="cqB-r9-lUb"/>
+                            <constraint firstItem="6TZ-Sm-ofO" firstAttribute="leading" secondItem="vcE-LA-Uob" secondAttribute="leading" id="ivD-o4-ZHg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="omf-z1-PYr" secondAttribute="trailing" priority="900" id="loL-WN-asO"/>
+                            <constraint firstItem="zMX-XJ-zCR" firstAttribute="top" secondItem="vcE-LA-Uob" secondAttribute="bottom" constant="38" id="smK-Cd-bAC"/>
+                            <constraint firstItem="5vJ-IJ-LIF" firstAttribute="top" secondItem="omf-z1-PYr" secondAttribute="bottom" constant="32" id="snf-eY-JgD"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="parcelIDField" destination="omf-z1-PYr" id="gis-eJ-h8s"/>
+                        <outlet property="parcelNameField" destination="vcE-LA-Uob" id="p21-pu-Q3m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4p6-ao-bMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9lj-fx-H8g" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1343" y="810"/>
+        </scene>
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
-                <viewController title="Detail" id="Ah7-4n-0Wa" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController title="Detail" id="Ah7-4n-0Wa" customClass="ParcelDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cIm-e0-J51"/>
                         <viewControllerLayoutGuide type="bottom" id="a0L-h9-sNL"/>

@@ -12,14 +12,16 @@
 		1A6DA68B1ACFF14B006D3332 /* UPParcelTrackerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DA68A1ACFF14B006D3332 /* UPParcelTrackerInfo.m */; };
 		1AAEBB211ACFE5E200F7919F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB201ACFE5E200F7919F /* main.m */; };
 		1AAEBB241ACFE5E200F7919F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB231ACFE5E200F7919F /* AppDelegate.m */; };
-		1AAEBB271ACFE5E200F7919F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB261ACFE5E200F7919F /* MasterViewController.m */; };
-		1AAEBB2A1ACFE5E200F7919F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB291ACFE5E200F7919F /* DetailViewController.m */; };
+		1AAEBB271ACFE5E200F7919F /* ParcelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB261ACFE5E200F7919F /* ParcelListViewController.m */; };
+		1AAEBB2A1ACFE5E200F7919F /* ParcelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB291ACFE5E200F7919F /* ParcelDetailViewController.m */; };
 		1AAEBB2D1ACFE5E200F7919F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAEBB2B1ACFE5E200F7919F /* Main.storyboard */; };
 		1AAEBB2F1ACFE5E200F7919F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAEBB2E1ACFE5E200F7919F /* Images.xcassets */; };
 		1AAEBB321ACFE5E200F7919F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAEBB301ACFE5E200F7919F /* LaunchScreen.xib */; };
 		1AAEBB3E1ACFE5E200F7919F /* ukrposhta_trackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB3D1ACFE5E200F7919F /* ukrposhta_trackingTests.m */; };
 		CBFA60151ACFFC2D00F0E00E /* UPParcelList.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA60141ACFFC2D00F0E00E /* UPParcelList.m */; };
 		CBFA60191ACFFC4800F0E00E /* UPParcel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA60181ACFFC4800F0E00E /* UPParcel.m */; };
+		CBFA601D1AD004C500F0E00E /* ParcelListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA601C1AD004C500F0E00E /* ParcelListCell.m */; };
+		CBFA60201AD006C900F0E00E /* ParcelAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA601F1AD006C900F0E00E /* ParcelAddViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +45,10 @@
 		1AAEBB201ACFE5E200F7919F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AAEBB221ACFE5E200F7919F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AAEBB231ACFE5E200F7919F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1AAEBB251ACFE5E200F7919F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		1AAEBB261ACFE5E200F7919F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		1AAEBB281ACFE5E200F7919F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		1AAEBB291ACFE5E200F7919F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1AAEBB251ACFE5E200F7919F /* ParcelListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParcelListViewController.h; sourceTree = "<group>"; };
+		1AAEBB261ACFE5E200F7919F /* ParcelListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParcelListViewController.m; sourceTree = "<group>"; };
+		1AAEBB281ACFE5E200F7919F /* ParcelDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParcelDetailViewController.h; sourceTree = "<group>"; };
+		1AAEBB291ACFE5E200F7919F /* ParcelDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParcelDetailViewController.m; sourceTree = "<group>"; };
 		1AAEBB2C1ACFE5E200F7919F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AAEBB2E1ACFE5E200F7919F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1AAEBB311ACFE5E200F7919F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -57,6 +59,11 @@
 		CBFA60141ACFFC2D00F0E00E /* UPParcelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPParcelList.m; path = Model/UPParcelList.m; sourceTree = "<group>"; };
 		CBFA60171ACFFC4800F0E00E /* UPParcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPParcel.h; path = Model/UPParcel.h; sourceTree = "<group>"; };
 		CBFA60181ACFFC4800F0E00E /* UPParcel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPParcel.m; path = Model/UPParcel.m; sourceTree = "<group>"; };
+		CBFA601A1AD0041D00F0E00E /* UPParcels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPParcels.h; sourceTree = "<group>"; };
+		CBFA601B1AD004C500F0E00E /* ParcelListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParcelListCell.h; sourceTree = "<group>"; };
+		CBFA601C1AD004C500F0E00E /* ParcelListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParcelListCell.m; sourceTree = "<group>"; };
+		CBFA601E1AD006C900F0E00E /* ParcelAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParcelAddViewController.h; sourceTree = "<group>"; };
+		CBFA601F1AD006C900F0E00E /* ParcelAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParcelAddViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +120,14 @@
 				1A6DA6831ACFE8E6006D3332 /* tracker */,
 				1AAEBB221ACFE5E200F7919F /* AppDelegate.h */,
 				1AAEBB231ACFE5E200F7919F /* AppDelegate.m */,
-				1AAEBB251ACFE5E200F7919F /* MasterViewController.h */,
-				1AAEBB261ACFE5E200F7919F /* MasterViewController.m */,
-				1AAEBB281ACFE5E200F7919F /* DetailViewController.h */,
-				1AAEBB291ACFE5E200F7919F /* DetailViewController.m */,
+				1AAEBB251ACFE5E200F7919F /* ParcelListViewController.h */,
+				1AAEBB261ACFE5E200F7919F /* ParcelListViewController.m */,
+				CBFA601B1AD004C500F0E00E /* ParcelListCell.h */,
+				CBFA601C1AD004C500F0E00E /* ParcelListCell.m */,
+				CBFA601E1AD006C900F0E00E /* ParcelAddViewController.h */,
+				CBFA601F1AD006C900F0E00E /* ParcelAddViewController.m */,
+				1AAEBB281ACFE5E200F7919F /* ParcelDetailViewController.h */,
+				1AAEBB291ACFE5E200F7919F /* ParcelDetailViewController.m */,
 				1AAEBB2B1ACFE5E200F7919F /* Main.storyboard */,
 				1AAEBB2E1ACFE5E200F7919F /* Images.xcassets */,
 				1AAEBB301ACFE5E200F7919F /* LaunchScreen.xib */,
@@ -155,6 +166,7 @@
 		CBFA60161ACFFC3400F0E00E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CBFA601A1AD0041D00F0E00E /* UPParcels.h */,
 				CBFA60171ACFFC4800F0E00E /* UPParcel.h */,
 				CBFA60181ACFFC4800F0E00E /* UPParcel.m */,
 				CBFA60131ACFFC2D00F0E00E /* UPParcelList.h */,
@@ -264,13 +276,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAEBB241ACFE5E200F7919F /* AppDelegate.m in Sources */,
+				CBFA601D1AD004C500F0E00E /* ParcelListCell.m in Sources */,
 				1A6DA6861ACFE8F4006D3332 /* UPParcelTracker.m in Sources */,
+				CBFA60201AD006C900F0E00E /* ParcelAddViewController.m in Sources */,
 				CBFA60191ACFFC4800F0E00E /* UPParcel.m in Sources */,
 				1A6DA68B1ACFF14B006D3332 /* UPParcelTrackerInfo.m in Sources */,
-				1AAEBB271ACFE5E200F7919F /* MasterViewController.m in Sources */,
+				1AAEBB271ACFE5E200F7919F /* ParcelListViewController.m in Sources */,
 				CBFA60151ACFFC2D00F0E00E /* UPParcelList.m in Sources */,
 				1AAEBB211ACFE5E200F7919F /* main.m in Sources */,
-				1AAEBB2A1ACFE5E200F7919F /* DetailViewController.m in Sources */,
+				1AAEBB2A1ACFE5E200F7919F /* ParcelDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
