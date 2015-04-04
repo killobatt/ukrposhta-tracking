@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A6DA6861ACFE8F4006D3332 /* UPParcelTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DA6851ACFE8F4006D3332 /* UPParcelTracker.m */; };
+		1A6DA6881ACFEACE006D3332 /* UPParcelTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DA6871ACFEACE006D3332 /* UPParcelTrackerTests.m */; };
+		1A6DA68B1ACFF14B006D3332 /* UPParcelTrackerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DA68A1ACFF14B006D3332 /* UPParcelTrackerInfo.m */; };
 		1AAEBB211ACFE5E200F7919F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB201ACFE5E200F7919F /* main.m */; };
 		1AAEBB241ACFE5E200F7919F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB231ACFE5E200F7919F /* AppDelegate.m */; };
 		1AAEBB271ACFE5E200F7919F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB261ACFE5E200F7919F /* MasterViewController.m */; };
@@ -28,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A6DA6841ACFE8F4006D3332 /* UPParcelTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPParcelTracker.h; sourceTree = "<group>"; };
+		1A6DA6851ACFE8F4006D3332 /* UPParcelTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPParcelTracker.m; sourceTree = "<group>"; };
+		1A6DA6871ACFEACE006D3332 /* UPParcelTrackerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPParcelTrackerTests.m; sourceTree = "<group>"; };
+		1A6DA6891ACFF14B006D3332 /* UPParcelTrackerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPParcelTrackerInfo.h; sourceTree = "<group>"; };
+		1A6DA68A1ACFF14B006D3332 /* UPParcelTrackerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPParcelTrackerInfo.m; sourceTree = "<group>"; };
 		1AAEBB1B1ACFE5E200F7919F /* ukrposhta-tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ukrposhta-tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAEBB1F1ACFE5E200F7919F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAEBB201ACFE5E200F7919F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6DA6831ACFE8E6006D3332 /* tracker */ = {
+			isa = PBXGroup;
+			children = (
+				1A6DA6841ACFE8F4006D3332 /* UPParcelTracker.h */,
+				1A6DA6851ACFE8F4006D3332 /* UPParcelTracker.m */,
+				1A6DA6891ACFF14B006D3332 /* UPParcelTrackerInfo.h */,
+				1A6DA68A1ACFF14B006D3332 /* UPParcelTrackerInfo.m */,
+			);
+			path = tracker;
+			sourceTree = "<group>";
+		};
 		1AAEBB121ACFE5E200F7919F = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +103,7 @@
 		1AAEBB1D1ACFE5E200F7919F /* ukrposhta-tracking */ = {
 			isa = PBXGroup;
 			children = (
+				1A6DA6831ACFE8E6006D3332 /* tracker */,
 				1AAEBB221ACFE5E200F7919F /* AppDelegate.h */,
 				1AAEBB231ACFE5E200F7919F /* AppDelegate.m */,
 				1AAEBB251ACFE5E200F7919F /* MasterViewController.h */,
@@ -110,6 +130,7 @@
 		1AAEBB3A1ACFE5E200F7919F /* ukrposhta-trackingTests */ = {
 			isa = PBXGroup;
 			children = (
+				1A6DA6871ACFEACE006D3332 /* UPParcelTrackerTests.m */,
 				1AAEBB3D1ACFE5E200F7919F /* ukrposhta_trackingTests.m */,
 				1AAEBB3B1ACFE5E200F7919F /* Supporting Files */,
 			);
@@ -225,6 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAEBB241ACFE5E200F7919F /* AppDelegate.m in Sources */,
+				1A6DA6861ACFE8F4006D3332 /* UPParcelTracker.m in Sources */,
+				1A6DA68B1ACFF14B006D3332 /* UPParcelTrackerInfo.m in Sources */,
 				1AAEBB271ACFE5E200F7919F /* MasterViewController.m in Sources */,
 				1AAEBB211ACFE5E200F7919F /* main.m in Sources */,
 				1AAEBB2A1ACFE5E200F7919F /* DetailViewController.m in Sources */,
@@ -235,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6DA6881ACFEACE006D3332 /* UPParcelTrackerTests.m in Sources */,
 				1AAEBB3E1ACFE5E200F7919F /* ukrposhta_trackingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +442,7 @@
 				1AAEBB431ACFE5E200F7919F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AAEBB441ACFE5E200F7919F /* Build configuration list for PBXNativeTarget "ukrposhta-trackingTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +451,7 @@
 				1AAEBB461ACFE5E200F7919F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
