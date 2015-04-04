@@ -12,9 +12,10 @@
 
 + (void)trackerInfoForParcelID:(NSString *)parcelID completionBlock:(void (^)(NSString *parcelID, UPParcelTrackerInfo *info))block;
 {
-    NSURL *url = [self URLWithBase:@"services.ukrposhta.com/barcodestatistic/barcodestatistic.asmx"
-                        parameters:@{@"op": parcelID}];
-    
+    NSURL *url = [self URLWithBase:@"services.ukrposhta.com/barcodestatistic/barcodestatistic.asmx/GetBarcodeInfo"
+                        parameters:@{@"guid": @"fcc8d9e1-b6f9-438f-9ac8-b67ab44391dd",
+                                     @"culture": @"uk",
+                                     @"barcode": parcelID}];
     
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url
                                                              completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
