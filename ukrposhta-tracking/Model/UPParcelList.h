@@ -19,6 +19,11 @@
 - (void)removeParcel:(UPParcel *)parcel;
 
 - (void)save;
-- (void)updateTrackerInfoForParcel:(UPParcel *)parcel completionBlock:(void (^)(UPParcel *parcel))block;
+- (void)updateTrackerInfoForParcel:(UPParcel *)parcel completionBlock:(void (^)(UPParcel *parcel, BOOL updated))block;
+// Updates tracker info for all parcels, return array of updated parcels, which were actually updated
+- (void)updateAllTrackerInfo;
+
+@property (assign, nonatomic, readonly) NSUInteger numberOfUpdatedParcels;
+- (void)resetUpdatedParcels;
 
 @end

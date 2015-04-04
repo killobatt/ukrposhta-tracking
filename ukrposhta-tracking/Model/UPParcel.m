@@ -14,6 +14,16 @@ static NSString * const kUPParcelTrackerInfoKey = @"tracker-info";
 
 @implementation UPParcel
 
+- (BOOL)isEqual:(UPParcel *)object
+{
+    return [self.parcelID isEqual:object.parcelID];
+}
+
+- (NSUInteger)hash
+{
+    return [self.parcelID hash];
+}
+
 #pragma mark - NSCoding
 
 - (id)initWithCoder:(NSCoder *)aDecoder

@@ -9,11 +9,17 @@
 #import "UPParcelList.h"
 #import "UPParcel.h"
 #import "UPParcelTracker.h"
+#import "UPParcelTrackerInfo.h"
+#import "UPParcelTrackerOperation.h"
+
+#import <UIKit/UIKit.h>
 
 static NSString * const kUPParcelListParcelsKey = @"parcels";
+static NSString * const kUPParcelListUpdatedParcelsKey = @"updated-parcels";
 
 @interface UPParcelList ()
 @property (strong, nonatomic) NSMutableArray *parcelList;
+@property (strong, nonatomic) NSMutableArray *updatedParcels;
 @end
 
 @implementation UPParcelList
@@ -38,6 +44,7 @@ static NSString * const kUPParcelListParcelsKey = @"parcels";
     self = [super init];
     if (self) {
         self.parcelList = [@[] mutableCopy];
+        self.updatedParcels = [@[] mutableCopy];
     }
     return self;
 }
@@ -73,15 +80,62 @@ static NSString * const kUPParcelListParcelsKey = @"parcels";
 
 #pragma mark - 
 
-- (void)updateTrackerInfoForParcel:(UPParcel *)parcel completionBlock:(void (^)(UPParcel *))block
+- (void)updateTrackerInfoForParcel:(UPParcel *)parcel completionBlock:(void (^)(UPParcel *parcel, BOOL updated))block
 {
     [UPParcelTracker trackerInfoForParcelID:parcel.parcelID
                             completionBlock:^(NSString *parcelID, UPParcelTrackerInfo *info) {
                                 UPParcel *parcel = [self parcelWithParcelID:parcelID];
+                                BOOL updated = NO;
+                                if (parcel.trackerInfo.operations) {
+                                    UPParcelTrackerOperation *lastOperation = parcel.trackerInfo.operations.lastObject;
+                                    UPParcelTrackerOperation *newLastOperation = info.operations.lastObject;
+                                    if (lastOperation.date.timeIntervalSince1970 < newLastOperation.date.timeIntervalSince1970) {
+                                        updated = YES;
+                                        if (![self.updatedParcels containsObject:parcel]) {
+                                            [self.updatedParcels addObject:parcel];
+                                        }
+                                        [self presentNotificationForParcel:parcel operation:newLastOperation];
+                                    }
+                                }
                                 parcel.trackerInfo = info;
                                 [self save];
-                                block(parcel);
+                                block(parcel, updated);
                             }];
+}
+
+- (void)updateAllTrackerInfo
+{
+    for (UPParcel *parcel in self.parcels) {
+        [self updateTrackerInfoForParcel:parcel completionBlock:^(UPParcel *parcel, BOOL updated) {
+            
+        }];
+    }
+}
+
+#pragma mark - Notifications
+
+- (void)presentNotificationForParcel:(UPParcel *)parcel operation:(UPParcelTrackerOperation *)operation
+{
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.alertTitle = [NSString stringWithFormat:@"%@ - %@", parcel.name, parcel.parcelID, nil];
+    notification.alertBody = [NSString stringWithFormat:@"%@ - %@ - %@",
+                              operation.date,
+                              operation.postOfficeName,
+                              operation.operationDescription, nil];
+    notification.applicationIconBadgeNumber = self.numberOfUpdatedParcels;
+    notification.fireDate = [NSDate date];
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+}
+
+- (NSUInteger)numberOfUpdatedParcels
+{
+    return self.updatedParcels.count;
+}
+
+- (void)resetUpdatedParcels
+{
+    self.updatedParcels = [@[] mutableCopy];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
 }
 
 #pragma mark - Save / Load
@@ -110,6 +164,7 @@ static NSString * const kUPParcelListParcelsKey = @"parcels";
     self = [super init];
     if (self) {
         self.parcelList = [aDecoder decodeObjectForKey:kUPParcelListParcelsKey];
+        self.updatedParcels = [aDecoder decodeObjectForKey:kUPParcelListUpdatedParcelsKey];
     }
     return self;
 }
@@ -117,6 +172,7 @@ static NSString * const kUPParcelListParcelsKey = @"parcels";
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
     [aCoder encodeObject:self.parcelList forKey:kUPParcelListParcelsKey];
+    [aCoder encodeObject:self.updatedParcels forKey:kUPParcelListUpdatedParcelsKey];
 }
 
 @end
