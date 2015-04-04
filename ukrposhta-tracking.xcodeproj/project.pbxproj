@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AAEBB211ACFE5E200F7919F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB201ACFE5E200F7919F /* main.m */; };
+		1AAEBB241ACFE5E200F7919F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB231ACFE5E200F7919F /* AppDelegate.m */; };
+		1AAEBB271ACFE5E200F7919F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB261ACFE5E200F7919F /* MasterViewController.m */; };
+		1AAEBB2A1ACFE5E200F7919F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB291ACFE5E200F7919F /* DetailViewController.m */; };
+		1AAEBB2D1ACFE5E200F7919F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAEBB2B1ACFE5E200F7919F /* Main.storyboard */; };
+		1AAEBB2F1ACFE5E200F7919F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAEBB2E1ACFE5E200F7919F /* Images.xcassets */; };
+		1AAEBB321ACFE5E200F7919F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAEBB301ACFE5E200F7919F /* LaunchScreen.xib */; };
+		1AAEBB3E1ACFE5E200F7919F /* ukrposhta_trackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB3D1ACFE5E200F7919F /* ukrposhta_trackingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AAEBB381ACFE5E200F7919F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AAEBB131ACFE5E200F7919F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AAEBB1A1ACFE5E200F7919F;
+			remoteInfo = "ukrposhta-tracking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AAEBB1B1ACFE5E200F7919F /* ukrposhta-tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ukrposhta-tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAEBB1F1ACFE5E200F7919F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAEBB201ACFE5E200F7919F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AAEBB221ACFE5E200F7919F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AAEBB231ACFE5E200F7919F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1AAEBB251ACFE5E200F7919F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		1AAEBB261ACFE5E200F7919F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		1AAEBB281ACFE5E200F7919F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1AAEBB291ACFE5E200F7919F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1AAEBB2C1ACFE5E200F7919F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AAEBB2E1ACFE5E200F7919F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1AAEBB311ACFE5E200F7919F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1AAEBB371ACFE5E200F7919F /* ukrposhta-trackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ukrposhta-trackingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAEBB3C1ACFE5E200F7919F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAEBB3D1ACFE5E200F7919F /* ukrposhta_trackingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ukrposhta_trackingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AAEBB181ACFE5E200F7919F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAEBB341ACFE5E200F7919F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AAEBB121ACFE5E200F7919F = {
+			isa = PBXGroup;
+			children = (
+				1AAEBB1D1ACFE5E200F7919F /* ukrposhta-tracking */,
+				1AAEBB3A1ACFE5E200F7919F /* ukrposhta-trackingTests */,
+				1AAEBB1C1ACFE5E200F7919F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AAEBB1C1ACFE5E200F7919F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AAEBB1B1ACFE5E200F7919F /* ukrposhta-tracking.app */,
+				1AAEBB371ACFE5E200F7919F /* ukrposhta-trackingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AAEBB1D1ACFE5E200F7919F /* ukrposhta-tracking */ = {
+			isa = PBXGroup;
+			children = (
+				1AAEBB221ACFE5E200F7919F /* AppDelegate.h */,
+				1AAEBB231ACFE5E200F7919F /* AppDelegate.m */,
+				1AAEBB251ACFE5E200F7919F /* MasterViewController.h */,
+				1AAEBB261ACFE5E200F7919F /* MasterViewController.m */,
+				1AAEBB281ACFE5E200F7919F /* DetailViewController.h */,
+				1AAEBB291ACFE5E200F7919F /* DetailViewController.m */,
+				1AAEBB2B1ACFE5E200F7919F /* Main.storyboard */,
+				1AAEBB2E1ACFE5E200F7919F /* Images.xcassets */,
+				1AAEBB301ACFE5E200F7919F /* LaunchScreen.xib */,
+				1AAEBB1E1ACFE5E200F7919F /* Supporting Files */,
+			);
+			path = "ukrposhta-tracking";
+			sourceTree = "<group>";
+		};
+		1AAEBB1E1ACFE5E200F7919F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAEBB1F1ACFE5E200F7919F /* Info.plist */,
+				1AAEBB201ACFE5E200F7919F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AAEBB3A1ACFE5E200F7919F /* ukrposhta-trackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AAEBB3D1ACFE5E200F7919F /* ukrposhta_trackingTests.m */,
+				1AAEBB3B1ACFE5E200F7919F /* Supporting Files */,
+			);
+			path = "ukrposhta-trackingTests";
+			sourceTree = "<group>";
+		};
+		1AAEBB3B1ACFE5E200F7919F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAEBB3C1ACFE5E200F7919F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AAEBB1A1ACFE5E200F7919F /* ukrposhta-tracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAEBB411ACFE5E200F7919F /* Build configuration list for PBXNativeTarget "ukrposhta-tracking" */;
+			buildPhases = (
+				1AAEBB171ACFE5E200F7919F /* Sources */,
+				1AAEBB181ACFE5E200F7919F /* Frameworks */,
+				1AAEBB191ACFE5E200F7919F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ukrposhta-tracking";
+			productName = "ukrposhta-tracking";
+			productReference = 1AAEBB1B1ACFE5E200F7919F /* ukrposhta-tracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AAEBB361ACFE5E200F7919F /* ukrposhta-trackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAEBB441ACFE5E200F7919F /* Build configuration list for PBXNativeTarget "ukrposhta-trackingTests" */;
+			buildPhases = (
+				1AAEBB331ACFE5E200F7919F /* Sources */,
+				1AAEBB341ACFE5E200F7919F /* Frameworks */,
+				1AAEBB351ACFE5E200F7919F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AAEBB391ACFE5E200F7919F /* PBXTargetDependency */,
+			);
+			name = "ukrposhta-trackingTests";
+			productName = "ukrposhta-trackingTests";
+			productReference = 1AAEBB371ACFE5E200F7919F /* ukrposhta-trackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AAEBB131ACFE5E200F7919F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Tolik Shevchenko";
+				TargetAttributes = {
+					1AAEBB1A1ACFE5E200F7919F = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1AAEBB361ACFE5E200F7919F = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 1AAEBB1A1ACFE5E200F7919F;
+					};
+				};
+			};
+			buildConfigurationList = 1AAEBB161ACFE5E200F7919F /* Build configuration list for PBXProject "ukrposhta-tracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AAEBB121ACFE5E200F7919F;
+			productRefGroup = 1AAEBB1C1ACFE5E200F7919F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AAEBB1A1ACFE5E200F7919F /* ukrposhta-tracking */,
+				1AAEBB361ACFE5E200F7919F /* ukrposhta-trackingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AAEBB191ACFE5E200F7919F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAEBB2D1ACFE5E200F7919F /* Main.storyboard in Resources */,
+				1AAEBB321ACFE5E200F7919F /* LaunchScreen.xib in Resources */,
+				1AAEBB2F1ACFE5E200F7919F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAEBB351ACFE5E200F7919F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AAEBB171ACFE5E200F7919F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAEBB241ACFE5E200F7919F /* AppDelegate.m in Sources */,
+				1AAEBB271ACFE5E200F7919F /* MasterViewController.m in Sources */,
+				1AAEBB211ACFE5E200F7919F /* main.m in Sources */,
+				1AAEBB2A1ACFE5E200F7919F /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAEBB331ACFE5E200F7919F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAEBB3E1ACFE5E200F7919F /* ukrposhta_trackingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AAEBB391ACFE5E200F7919F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AAEBB1A1ACFE5E200F7919F /* ukrposhta-tracking */;
+			targetProxy = 1AAEBB381ACFE5E200F7919F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AAEBB2B1ACFE5E200F7919F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAEBB2C1ACFE5E200F7919F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AAEBB301ACFE5E200F7919F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAEBB311ACFE5E200F7919F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AAEBB3F1ACFE5E200F7919F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1AAEBB401ACFE5E200F7919F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AAEBB421ACFE5E200F7919F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ukrposhta-tracking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1AAEBB431ACFE5E200F7919F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ukrposhta-tracking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1AAEBB451ACFE5E200F7919F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ukrposhta-trackingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ukrposhta-tracking.app/ukrposhta-tracking";
+			};
+			name = Debug;
+		};
+		1AAEBB461ACFE5E200F7919F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ukrposhta-trackingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ukrposhta-tracking.app/ukrposhta-tracking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AAEBB161ACFE5E200F7919F /* Build configuration list for PBXProject "ukrposhta-tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAEBB3F1ACFE5E200F7919F /* Debug */,
+				1AAEBB401ACFE5E200F7919F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAEBB411ACFE5E200F7919F /* Build configuration list for PBXNativeTarget "ukrposhta-tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAEBB421ACFE5E200F7919F /* Debug */,
+				1AAEBB431ACFE5E200F7919F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1AAEBB441ACFE5E200F7919F /* Build configuration list for PBXNativeTarget "ukrposhta-trackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAEBB451ACFE5E200F7919F /* Debug */,
+				1AAEBB461ACFE5E200F7919F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AAEBB131ACFE5E200F7919F /* Project object */;
+}
