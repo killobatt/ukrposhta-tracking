@@ -7,6 +7,7 @@
 //
 
 #import "UPParcelTracker.h"
+#import "XPathQuery.h"
 
 @implementation UPParcelTracker
 
@@ -19,9 +20,9 @@
     
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url
                                                              completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                                                 NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
                                                                  
-                                                                 NSLog(@"Received data:%@", jsonDictionary);
+                                                                 NSArray *parsedXMLArray = PerformXMLXPathQuery(data, @"/");
+                                                                 NSLog(@"Received XML data:%@", parsedXMLArray);
                                                                  
                                                                  UPParcelTrackerInfo *info = [[UPParcelTrackerInfo alloc] init];
                                                                  dispatch_async(dispatch_get_main_queue(), ^{
