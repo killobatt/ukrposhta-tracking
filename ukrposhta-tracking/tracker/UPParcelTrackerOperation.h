@@ -10,9 +10,11 @@
 
 @interface UPParcelTrackerOperation : NSObject< NSCoding >
 
+- (instancetype)initWithOperationXMLDictionary:(NSDictionary *)XMLDictionary NS_DESIGNATED_INITIALIZER;
+
 @property (strong, nonatomic) NSDate *date;
 @property (strong, nonatomic) NSNumber *eventID;
-@property (strong, nonatomic) NSString *postOfficeIndex;
+@property (strong, nonatomic) NSNumber *postOfficeIndex;
 @property (strong, nonatomic) NSString *postOfficeName;
 @property (strong, nonatomic) NSString *operationDescription;
 

@@ -10,6 +10,7 @@
 
 @interface UPParcelTrackerInfo : NSObject< NSCoding >
 
-@property (strong, nonatomic) NSArray *operations;
+- (instancetype)initWithOperationsXMLArray:(NSArray *)XMLArray NS_DESIGNATED_INITIALIZER;
+@property (strong, nonatomic) NSArray *operations;//an array of UPParcelTrackerOperation instances
 
 @end

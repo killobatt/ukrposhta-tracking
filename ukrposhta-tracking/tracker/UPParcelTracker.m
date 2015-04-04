@@ -21,10 +21,28 @@
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url
                                                              completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                                                  
-                                                                 NSArray *parsedXMLArray = PerformXMLXPathQuery(data, @"/");
-                                                                 NSLog(@"Received XML data:%@", parsedXMLArray);
+                                                                 NSArray *operationsXMLArray = nil;
+                                                                 if (nil == error)
+                                                                 {
+                                                                     NSArray *parsedXMLArray = PerformXMLXPathQuery(data, @"/");
+                                                                     NSLog(@"Received XML data:%@", parsedXMLArray);
+                                                                     
+                                                                     if (parsedXMLArray.count > 0 && [parsedXMLArray[0] isKindOfClass:[NSDictionary class]])
+                                                                     {
+                                                                         operationsXMLArray = [parsedXMLArray[0] objectForKey:@"nodeChildArray"];
+                                                                     }
+                                                                     else
+                                                                     {
+                                                                         NSLog(@"Wrong parsedXMLArray structure:%@", parsedXMLArray);
+                                                                     }
+                                                                 }
+                                                                 else
+                                                                 {
+                                                                     NSLog(@"Error has been received:%@", error);
+                                                                 }
                                                                  
-                                                                 UPParcelTrackerInfo *info = [[UPParcelTrackerInfo alloc] init];
+                                                                 UPParcelTrackerInfo *info = [[UPParcelTrackerInfo alloc] initWithOperationsXMLArray:operationsXMLArray];
+                                                                 
                                                                  dispatch_async(dispatch_get_main_queue(), ^{
                                                                      block(parcelID, info);
                                                                  });

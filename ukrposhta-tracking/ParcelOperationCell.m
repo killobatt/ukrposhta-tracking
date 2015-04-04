@@ -29,7 +29,7 @@
 - (void)updateUI
 {
     self.postOfficeNameLabel.text = self.parcelOperation.postOfficeName;
-    self.postOfficeIndexLabel.text = self.parcelOperation.postOfficeIndex;
+    self.postOfficeIndexLabel.text = [self.parcelOperation.postOfficeIndex stringValue];
     self.eventDescriptionLabel.text = self.parcelOperation.operationDescription;
     
     NSDateFormatter *numberFormatter = [NSDateFormatter new];

@@ -7,14 +7,43 @@
 //
 
 #import "UPParcelTrackerInfo.h"
+#import "UPParcelTrackerOperation.h"
 
 static NSString * const kUPParcelTrackerInfoOperationsKey = @"operations";
 
+@interface UPParcelTrackerInfo ()
+- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+@end
+
 @implementation UPParcelTrackerInfo
+
+- (instancetype)initWithOperationsXMLArray:(NSArray *)XMLArray
+{
+    if (0 == XMLArray.count)
+    {
+        return nil;
+    }
+    
+    self = [super init];
+    if (self)
+    {
+        NSMutableArray *operations = [[NSMutableArray alloc] initWithCapacity:XMLArray.count];
+        for (NSDictionary *node in XMLArray)
+        {
+            UPParcelTrackerOperation *trackerOperation = [[UPParcelTrackerOperation alloc] initWithOperationXMLDictionary:node];
+            if (nil != trackerOperation)
+            {
+                [operations addObject:trackerOperation];
+            }
+        }
+        _operations = [operations copy];
+    }
+    return self;
+}
 
 #pragma mark - NSCoding
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super init];
     if (self) {
