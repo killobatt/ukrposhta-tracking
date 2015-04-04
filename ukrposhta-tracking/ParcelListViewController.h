@@ -10,6 +10,7 @@
 
 @interface ParcelListViewController : UITableViewController
 
+- (void)update;
 
 @end
 

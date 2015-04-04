@@ -80,6 +80,7 @@ static NSString * const kUPParcelListParcelsKey = @"parcels";
                                 UPParcel *parcel = [self parcelWithParcelID:parcelID];
                                 parcel.trackerInfo = info;
                                 [self save];
+                                block(parcel);
                             }];
 }
 

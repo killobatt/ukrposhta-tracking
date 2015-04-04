@@ -7,6 +7,7 @@
 //
 
 #import "ParcelAddViewController.h"
+#import "ParcelListViewController.h"
 #import "UPParcels.h"
 
 @interface ParcelAddViewController ()
@@ -36,6 +37,10 @@
         parcel.name = self.parcelNameField.text;
         parcel.parcelID = self.parcelIDField.text;
         [[UPParcelList sharedInstance] addParcel:parcel];
+        [[UPParcelList sharedInstance] updateTrackerInfoForParcel:parcel completionBlock:^(UPParcel *parcel) {
+            ParcelListViewController *controller = (ParcelListViewController *)segue.destinationViewController;
+            [controller update];
+        }];
     }
 }
 

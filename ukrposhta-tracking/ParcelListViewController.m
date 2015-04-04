@@ -29,6 +29,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)update
+{
+    [self.tableView reloadData];
+}
+
 - (UPParcelList *)parcelList
 {
     return [UPParcelList sharedInstance];
