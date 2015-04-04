@@ -49,7 +49,7 @@ static NSString * const kUPOperationOperationDescriptionKey = @"description";
     if (self)
     {
         _eventID = @([operationFields[1][@"nodeContent"] integerValue]);
-        _postOfficeIndex = @([operationFields[2][@"nodeContent"] integerValue]);
+        _postOfficeIndex = operationFields[2][@"nodeContent"];
         _date = [[UPParcelTrackerOperation dateFormatter] dateFromString:operationFields[3][@"nodeContent"]];
         _postOfficeName = operationFields[4][@"nodeContent"];
         _operationDescription = operationFields[5][@"nodeContent"];
