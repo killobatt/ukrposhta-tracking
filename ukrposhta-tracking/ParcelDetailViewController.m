@@ -7,6 +7,7 @@
 //
 
 #import "ParcelDetailViewController.h"
+#import "ParcelOperationCell.h"
 #import "UPParcels.h"
 
 @interface ParcelDetailViewController ()
@@ -31,6 +32,27 @@
 {
     _parcel = parcel;
     self.title = parcel.name;
+    [self.tableView reloadData];
 }
+
+#pragma mark - Table View
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.parcel.trackerInfo.operations.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ParcelOperationCell *cell = (ParcelOperationCell *)[tableView dequeueReusableCellWithIdentifier:@"ParcelOperationCell"
+                                                                             forIndexPath:indexPath];
+    
+    UPParcelTrackerOperation *operation = self.parcel.trackerInfo.operations[indexPath.row];
+    cell.parcelOperation = operation;
+    return cell;
+}
+
 
 @end

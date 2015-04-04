@@ -21,6 +21,7 @@
 		1AAEBB321ACFE5E200F7919F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAEBB301ACFE5E200F7919F /* LaunchScreen.xib */; };
 		1AAEBB3E1ACFE5E200F7919F /* ukrposhta_trackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBB3D1ACFE5E200F7919F /* ukrposhta_trackingTests.m */; };
 		CBF4B6C71AD04E400097ABCA /* UPParcelTrackerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4B6C61AD04E400097ABCA /* UPParcelTrackerOperation.m */; };
+		CBF4B6CA1AD04FF00097ABCA /* ParcelOperationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4B6C91AD04FF00097ABCA /* ParcelOperationCell.m */; };
 		CBFA60151ACFFC2D00F0E00E /* UPParcelList.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA60141ACFFC2D00F0E00E /* UPParcelList.m */; };
 		CBFA60191ACFFC4800F0E00E /* UPParcel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA60181ACFFC4800F0E00E /* UPParcel.m */; };
 		CBFA601D1AD004C500F0E00E /* ParcelListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA601C1AD004C500F0E00E /* ParcelListCell.m */; };
@@ -63,6 +64,8 @@
 		1AAEBB3D1ACFE5E200F7919F /* ukrposhta_trackingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ukrposhta_trackingTests.m; sourceTree = "<group>"; };
 		CBF4B6C51AD04E400097ABCA /* UPParcelTrackerOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPParcelTrackerOperation.h; sourceTree = "<group>"; };
 		CBF4B6C61AD04E400097ABCA /* UPParcelTrackerOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPParcelTrackerOperation.m; sourceTree = "<group>"; };
+		CBF4B6C81AD04FF00097ABCA /* ParcelOperationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParcelOperationCell.h; sourceTree = "<group>"; };
+		CBF4B6C91AD04FF00097ABCA /* ParcelOperationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParcelOperationCell.m; sourceTree = "<group>"; };
 		CBFA60131ACFFC2D00F0E00E /* UPParcelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPParcelList.h; path = Model/UPParcelList.h; sourceTree = "<group>"; };
 		CBFA60141ACFFC2D00F0E00E /* UPParcelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPParcelList.m; path = Model/UPParcelList.m; sourceTree = "<group>"; };
 		CBFA60171ACFFC4800F0E00E /* UPParcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPParcel.h; path = Model/UPParcel.h; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				CBFA601F1AD006C900F0E00E /* ParcelAddViewController.m */,
 				1AAEBB281ACFE5E200F7919F /* ParcelDetailViewController.h */,
 				1AAEBB291ACFE5E200F7919F /* ParcelDetailViewController.m */,
+				CBF4B6C81AD04FF00097ABCA /* ParcelOperationCell.h */,
+				CBF4B6C91AD04FF00097ABCA /* ParcelOperationCell.m */,
 				1AAEBB2B1ACFE5E200F7919F /* Main.storyboard */,
 				1AAEBB2E1ACFE5E200F7919F /* Images.xcassets */,
 				1AAEBB301ACFE5E200F7919F /* LaunchScreen.xib */,
@@ -305,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF4B6CA1AD04FF00097ABCA /* ParcelOperationCell.m in Sources */,
 				1AAEBB241ACFE5E200F7919F /* AppDelegate.m in Sources */,
 				CBFA601D1AD004C500F0E00E /* ParcelListCell.m in Sources */,
 				1A6DA6861ACFE8F4006D3332 /* UPParcelTracker.m in Sources */,

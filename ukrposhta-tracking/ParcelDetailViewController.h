@@ -10,7 +10,7 @@
 
 @class UPParcel;
 
-@interface ParcelDetailViewController : UIViewController
+@interface ParcelDetailViewController : UITableViewController
 
 @property (strong, nonatomic) UPParcel *parcel;
 
