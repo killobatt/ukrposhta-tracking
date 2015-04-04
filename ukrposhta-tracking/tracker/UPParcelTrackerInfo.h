@@ -10,4 +10,6 @@
 
 @interface UPParcelTrackerInfo : NSObject
 
+@property (strong, nonatomic) NSArray *operations;
+
 @end
